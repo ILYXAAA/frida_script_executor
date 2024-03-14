@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>616</width>
+    <height>511</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>220</y>
+      <width>531</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 20pt &quot;MS Shell Dlg 2&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Logs:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPlainTextEdit" name="plainTextEdit_logs">
+       <property name="minimumSize">
+        <size>
+         <width>500</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>500</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 1px solid black;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>10</y>
+      <width>342</width>
+      <height>208</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="minimumSize">
+        <size>
+         <width>300</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 18pt &quot;MS Shell Dlg 2&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Выбор приложения:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_app">
+       <property name="minimumSize">
+        <size>
+         <width>340</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>340</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="minimumSize">
+        <size>
+         <width>240</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>240</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 18pt &quot;MS Shell Dlg 2&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Выбор скрипта:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QComboBox" name="comboBox_script">
+         <property name="minimumSize">
+          <size>
+           <width>240</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>240</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_reload_scripts">
+         <property name="minimumSize">
+          <size>
+           <width>90</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>90</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>MS Shell Dlg 2</family>
+           <pointsize>12</pointsize>
+           <weight>9</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+	font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+	background-color: rgb(84, 84, 84);
+}
+
+QPushButton:hover{
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+	font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+	background-color: rgb(132, 132, 132);
+}
+
+QPushButton:pressed{
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+	font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+	background-color: rgb(84, 84, 84);
+	
+}</string>
+         </property>
+         <property name="text">
+          <string>Reload</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_exec_script">
+       <property name="minimumSize">
+        <size>
+         <width>200</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>MS Shell Dlg 2</family>
+         <pointsize>12</pointsize>
+         <weight>9</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+	font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+	background-color: rgb(84, 84, 84);
+}
+
+QPushButton:hover{
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+	font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+	background-color: rgb(132, 132, 132);
+}
+
+QPushButton:pressed{
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+	font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+	background-color: rgb(84, 84, 84);
+	
+}</string>
+       </property>
+       <property name="text">
+        <string>Exec Script</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>242</width>
+      <height>117</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_4">
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="minimumSize">
+        <size>
+         <width>240</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>240</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>MS Shell Dlg 2</family>
+         <pointsize>18</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 18pt &quot;MS Shell Dlg 2&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Запуск ADB:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_launch_adb">
+       <property name="font">
+        <font>
+         <family>MS Shell Dlg 2</family>
+         <pointsize>14</pointsize>
+         <weight>9</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+	font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+	background-color: rgb(84, 84, 84);
+}
+
+QPushButton:hover{
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+	font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+	background-color: rgb(132, 132, 132);
+}
+
+QPushButton:pressed{
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+	font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+	background-color: rgb(84, 84, 84);
+	
+}</string>
+       </property>
+       <property name="text">
+        <string>Запуск</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_kill_adb_server">
+       <property name="minimumSize">
+        <size>
+         <width>240</width>
+         <height>33</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>240</width>
+         <height>33</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>MS Shell Dlg 2</family>
+         <pointsize>12</pointsize>
+         <weight>9</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+	font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+	background-color: rgb(84, 84, 84);
+}
+
+QPushButton:hover{
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+	font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+	background-color: rgb(132, 132, 132);
+}
+
+QPushButton:pressed{
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+	font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+	background-color: rgb(84, 84, 84);
+	
+}</string>
+       </property>
+       <property name="text">
+        <string>Завершить ADB</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
