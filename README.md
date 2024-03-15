@@ -14,6 +14,8 @@
 - Автоматизированная передача (push) frida-server файлов и сертификата BurpSuite, поднятие сервера на устройстве
 - Запуск JS Frida-скриптов для динамического анализа мобильных приложений.
 
+<h1 align="left"><img src="https://github.com/ILYXAAA/frida_script_executor/assets/107761814/2924bb68-1912-4af3-b891-eded0cdf59ac" width="400px">
+
 ## :memo: Требования:
 
 - Python 3.x
